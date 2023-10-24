@@ -1,0 +1,14 @@
+# After writing Dockerfile , run the below command from your project CMD Prompt
+
+syntax:
+docker build -t <tag_name> <location to build the img>
+ 
+Usage:
+$ docker build -t hello_docker .               # . in the sense it denotes the current location
+
+# List images
+
+$ docker images  
+
+or
+ $ docker image ls
