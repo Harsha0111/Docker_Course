@@ -5,7 +5,7 @@ RUN addgroup app && adduser -S -G app app
 USER app
 WORKDIR /app
 COPY . .
-RUN npm install
+RUN pnpm install
 ENV MSG=Welcome_All!!
 # or
 #ENV MSG Welcome_All!!
