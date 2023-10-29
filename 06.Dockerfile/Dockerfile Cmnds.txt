@@ -1,0 +1,13 @@
+Basic Commands
+
+FROM – Defines the base image to use and start the build process.
+
+RUN – It takes the command and its arguments to run it from the image.
+
+CMD – Similar function as a RUN command, but it gets executed only after the container is instantiated.
+
+ENTRYPOINT – It targets your default application in the image when the container is created.
+
+ADD – It copies the files from source to destination (inside the container).
+
+ENV – Sets environment variables.

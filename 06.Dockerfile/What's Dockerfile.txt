@@ -1,0 +1,14 @@
+What's Dockerfile?
+
+It is a simple text file with a set of command or instruction. 
+
+These commands/instructions are executed successively to perform actions on the base image to create a new docker image.
+
+
+Below is how your workflow will look like.
+
+Create a Dockerfile and mention the instructions to create your docker image,
+
+Run docker build command which will build a docker image,
+
+Now the docker image is ready to be used, use docker run command to create containers.
