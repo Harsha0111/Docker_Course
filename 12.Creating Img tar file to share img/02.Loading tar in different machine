@@ -1,3 +1,8 @@
 $ docker image load --help
 
+# need to try in your machine means, remove the mentioned img and load
+$ docker image rm react-app
+
+$ docker images
+
 $ docker image load -i <img_name>.tar

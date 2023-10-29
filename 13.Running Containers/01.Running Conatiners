@@ -14,4 +14,3 @@ $ docker run -d <img_name> or <id>
 $ docker run -d --name hello_all <img_name> or <id>
 
 
-

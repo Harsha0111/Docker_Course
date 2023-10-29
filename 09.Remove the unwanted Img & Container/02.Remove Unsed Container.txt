@@ -1,14 +1,19 @@
  before removing unwanted container
 $ docker ps
+or
+$ docker container ls
 
 stopped containers
 $ docker ps -a 
+or
+$docker container ls -a
+
 
 
 
 $ docker container prune
 
  after removing unwanted container
-$ docker pa -a
+$ docker ps -a
 
 
