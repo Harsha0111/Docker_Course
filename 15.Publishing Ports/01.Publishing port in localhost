@@ -1,0 +1,13 @@
+# check the ports generally it will be listen to container port only
+$ docker ps
+
+# to specify por to listen for localhost
+syntax:
+docker run -d -p <localhost_port>:<container_port> --name c1 <img_name>
+
+Usage:
+$ docker run -d -p  80:3000 --name c1 hello
+
+
+# now check the ports ,it will be listen to localhost & container port 
+$ docker ps

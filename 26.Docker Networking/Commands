@@ -1,0 +1,28 @@
+# Bring up the compose container again
+$ docker-compose up -d
+
+$ docker network ls
+
+# now there are 3 servies in our compose file they can speak each other
+# so, we going to ping api service from web service container via shell mode
+
+$ docker ps
+
+$ docker exec -it <web_container_id> sh 
+
+$ ping api
+
+# now we will get permission denied since we are app user , we need to be as root user
+
+$ docker exec -it -u root <web_container_id> sh 
+
+$ ping api
+
+*********************
+
+$ docker-compose logs --help
+$ docker-compose logs  
+
+# need to see log for individual container
+$ docker ps
+$ docker logs <container_id>

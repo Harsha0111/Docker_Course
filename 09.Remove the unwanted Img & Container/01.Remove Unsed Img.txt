@@ -1,0 +1,14 @@
+ before removing unwanted images
+$ docker images
+
+$ docker image prune
+
+ after removing unwanted images
+$ docker images
+
+need to see options related to image
+$ docker image
+
+If need to remove individual image
+$ docker image  rm <img_id> or <tag_name>
+

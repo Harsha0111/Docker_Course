@@ -1,0 +1,6 @@
+ Running Img in Interactive mode (i.e., we can loggin into the ubuntu machine & perform req actions)
+ syntax:
+ docker run -it <img_name>
+ 
+ Usage:
+ $ docker run -it ubuntu 

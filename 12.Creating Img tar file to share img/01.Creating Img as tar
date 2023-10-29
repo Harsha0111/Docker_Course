@@ -1,0 +1,3 @@
+$ docker image save --help
+
+$ docker image save -o <img_name>.tar <existing_img_name>:<tag_version/name>

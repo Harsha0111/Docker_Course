@@ -1,0 +1,17 @@
+# listing containers
+$ docker ps
+
+# listing images
+$ docker images 
+
+# need to list only image's container id alone
+$ docker image ls -q
+
+# to remove all listing images from above cmnd
+
+# first need to remove running container else get issue & passing -a option to remove all stopped & running containers
+$ docker container rm $(docker container ls -aq)
+
+$ docker image rm $(docker image ls -q)
+
+

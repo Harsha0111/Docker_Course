@@ -12,3 +12,12 @@ $ docker images
 
 or
  $ docker image ls
+
+
+ # Run a Img 
+syntax:
+ docker run <img-name> or <img_id>
+
+ Usage 
+ $ docker run hello_docker
+

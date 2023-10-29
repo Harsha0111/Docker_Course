@@ -1,0 +1,19 @@
+# yaml file extension can be either data.yml or data.yaml
+# here intend/spacing is very important
+
+# parsing yml is little bit slower while parsing json
+
+     # yml file data is easy to write & understand, 
+     # but in json the int & str can be easily identified by parson whereas yml can't find easily.
+     
+---
+name: This is JSON file,
+price: 124,
+is_published: true,
+tags: 
+  - one 
+  - two
+author: 
+  first_name: Harsha,
+  second_name: Selvi
+  

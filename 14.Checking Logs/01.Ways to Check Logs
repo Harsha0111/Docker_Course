@@ -1,0 +1,13 @@
+$ docker ps
+# to see the running container
+
+$ docker logs <container_id>
+
+$ docker logs --help
+
+# follow the logs in real time
+$ docker logs -f <container_id>
+
+# get the last 5 logs via specifying number
+$ docker logs -n 5 <container_id>
+

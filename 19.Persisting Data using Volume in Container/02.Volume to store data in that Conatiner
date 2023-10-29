@@ -1,0 +1,65 @@
+$ docker volume
+# to see it's info.
+
+Syntax:
+docker volume create <volume_name>
+
+$docker volume create volume1
+
+# to see info of volume1
+$docker volume inspect volume1
+
+#Syntax:
+docker run -it -p 3000:3000 -v volume1:/path/of/filesys  <img_name>
+
+$ docker run -it -p 3000:3000 -v volume1:/app/volume hello_img
+# it will generate some container_id
+
+$ docker exec -it <container_id_from above cmnd> sh
+/app $ cd volume
+/app/volume $ echo data > data.txt
+
+# now permission will be denied, since if you see the owner of the data.txt file is root, you can confirm by below cmnd
+/app/volume $ cd ..
+/app $ ls -l
+# now check the owner of the data.txt file
+
+so, to correct this you can modify yr Dockerfile by mentioning the cmnd to create volume dir, since there user is app.
+
+
+#After making changes in Dockerfile , exit from current container via below cmnd
+$ exit
+
+#Build the img again, since we made changes
+$ docker build -t new_one .
+
+# Creating new container , since now volume dir already exists
+$ docker run -d -p 4000:4000 -v volume1:/app/volume new_one
+# will get container_id
+
+$ docker exec -it <container_id_from above cmnd> sh
+/app $ cd volume
+/app/volume $ echo data > data.txt
+
+# now no permission issue
+
+# even if you delete this container also , they above created file's data will exists, becoz we've volume assigned to this img
+
+$ docker rm -f <container_id>
+
+# and start new container to check the data.txt file exists/not
+
+$ docker run -it -p 3000:3000 -v volume1:/app/volume hello_img
+# it will generate some container_id
+
+$ docker exec -it <container_id_from above cmnd> sh
+/app $ cd volume
+/app/volume $ ls
+
+
+
+
+
+
+
+

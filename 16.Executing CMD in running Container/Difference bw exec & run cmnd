@@ -1,0 +1,14 @@
+Docker run will run cmnd via starting "NEW CONTAINER" & execute the cmnds in container.
+
+Whereas,  Docker exec will execute the cmnds in currently running container.
+
+$docker exec <container_name> ls
+
+# shell session 
+# -it is interactive session to shell
+$docker exec -it <container_name> sh
+
+$ ls
+
+# to comeout of the sh env
+$exit 

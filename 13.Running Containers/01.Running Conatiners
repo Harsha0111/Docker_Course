@@ -1,0 +1,17 @@
+# to see running containers
+$ docker ps 
+
+# if no, then need to see stopped containers
+$ docker ps -a
+
+# to run a container
+$ docker run <img_name> or <id>
+
+# to run a container in background
+$ docker run -d <img_name> or <id>
+
+# if need to specify the container name, if not specified docker will generate random name
+$ docker run -d --name hello_all <img_name> or <id>
+
+
+

@@ -1,0 +1,18 @@
+# Start Compose Container
+
+$ docker-compose up --help
+
+normally after docker-compose build only we can run the docker-compose up, to avoid that
+
+$ docker-compose up --build 
+
+or
+
+$ docker-compose up -d
+
+# Check the process of container
+$docker-compose ps
+
+# Stop  Compose Container
+
+$docker-compose down

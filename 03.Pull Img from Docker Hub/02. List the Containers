@@ -1,0 +1,5 @@
+
+How to List Running Containers?
+$ docker ps (list running Containers)
+
+$ docker ps -a (list all running & stopped Containers)

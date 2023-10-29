@@ -1,0 +1,3 @@
+$ docker image load --help
+
+$ docker image load -i <img_name>.tar

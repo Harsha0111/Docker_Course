@@ -1,0 +1,11 @@
+
+{
+    "name": "This is JSON file",
+    "price": 124,
+    "is_published": true,
+    "tags": ["one", "two"],
+    "author": {
+        "first_name": "Harsha",
+        "second_name": "Selvi"
+    }
+}

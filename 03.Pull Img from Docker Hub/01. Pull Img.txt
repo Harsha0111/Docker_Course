@@ -1,0 +1,25 @@
+What is a Docker image called?
+
+* Image names in Docker are called "tags". 
+* The image tag has two parts "name:tag" . 
+* The name is the general name of the image and will ultimately be the image repository name when and if it is shared. 
+
+
+How to use Docker image?
+
+Step-1: Verify Docker version and also login to Docker Hub.
+Step-2: Search image name (i.e., nginx , linux) & you can Pull Image from Docker Hub via mentioned command.
+Step-3: Run the downloaded Docker Image & Access the Application.
+Step-4: List Running Containers.
+Step-5: Connect to Container Terminal.
+Step-6: Container Stop, Start.
+
+Note: Once the process is completed the Container will stop automatically
+
+
+How to Pull Image from Docker Hub?
+$ docker pull ubuntu
+$ docker run ubuntu 
+
+(or)
+$ docker run ubuntu (you can directly use this single cmnd to pull & run img)

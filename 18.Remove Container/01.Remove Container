@@ -1,0 +1,21 @@
+$ docker container rm <container_name>
+or
+$ docker rm <container_name>
+
+# note if container is running then you need to stop & remove or you can force option to remove container.
+
+
+$ docker stop <container_name>
+$ docker rm <container_name>
+
+or 
+
+$ docker rm -f <container_name>
+
+ and can check via below cmnd
+ $ docker pa -a
+
+ or 
+ 
+ $ docker pa -a | grep <container_name>
+

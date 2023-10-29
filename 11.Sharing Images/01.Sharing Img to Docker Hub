@@ -1,0 +1,12 @@
+login to the docker hub & sign in/up
+
+Step 1: Click Create Repository
+Step 2: Give repo name & Choose public/ private repo 
+Step 3: Click Create at Bottom
+
+Come to the Docker Click
+$ docker login
+
+Enter yr credentials
+ 
+$ docker push <img/tag_name> 

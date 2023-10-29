@@ -1,0 +1,10 @@
+$ docker ps
+
+# stop container
+$ docker stop <container_name/id>
+
+# start container
+$ docker start <container_name/id>
+
+whereas docker run will start new container, start , stop will proceed in existing container
+

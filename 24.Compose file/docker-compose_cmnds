@@ -1,0 +1,13 @@
+$ docker-compose
+
+$ docker-compose build --help
+
+$ docker-compose build
+
+$ docker images
+
+$ docker-compose build --no-cache
+
+$ docker images
+
+

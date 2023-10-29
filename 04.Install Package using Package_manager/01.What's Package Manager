@@ -1,0 +1,6 @@
+What's package manager ?
+
+* A package manager keeps track of what software is installed on your computer, 
+and allows you to easily install new software, upgrade software to newer versions, or remove software that you previously installed.
+
+For Ubuntu-Linux package manager is "apt"

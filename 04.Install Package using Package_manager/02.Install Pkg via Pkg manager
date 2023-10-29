@@ -1,0 +1,14 @@
+Update the package manager via update cmnd
+$ apt update
+
+Syntax to Install Pkg:
+apt install <pkg_name>
+
+Usage: 
+$ apt install nano
+
+Syntax to Uninstall Pkg:
+apt remove <pkg_name>
+
+Usage: 
+$ apt remove nano

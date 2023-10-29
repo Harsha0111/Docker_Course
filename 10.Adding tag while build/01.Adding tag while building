@@ -1,0 +1,18 @@
+
+1 st way to tag img while building
+$ docker build -t image_name:001 .
+
+to check the tag name
+$ docker images   
+you can able to see the img will be same with 2 different tag if that img already exits
+
+if need to remove the image via specifying tag
+$ docker image remove image_name:001 
+
+
+2 nd way to tag an img after building img:
+$ docker build tag image_name:001  image_name:new_tag_after_building_img
+
+
+Pointing the latest tag to the new/latest img, since latest would be pointing to oldest img
+$ docker image tag <img_id> <tag_name>:latest

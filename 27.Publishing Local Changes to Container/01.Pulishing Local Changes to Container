@@ -1,0 +1,15 @@
+$ docker-compose up
+
+# we face nodemon not found issue which used to restart the server when changes made
+
+so, follow below steps and see the docker-compose file changes also
+
+$ cd backend
+
+$ npm i 
+# or
+$ npm install
+
+$ docker-compose up
+
+#now, go to localfolder inside backend/routes/index.js and change the msg and refer the page in localhost

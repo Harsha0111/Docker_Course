@@ -1,0 +1,6 @@
+* So, while making any changes or Creating new files in container will exceed till close/exit from the container
+
+* To make data constant in that container even after exiting from it, we need volumes.
+
+* And also if we create 2/ more containers from same img also the changes made in particular container willn't visible to another container.
+
