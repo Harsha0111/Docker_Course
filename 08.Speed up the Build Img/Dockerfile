@@ -3,7 +3,6 @@ RUN addgroup app && adduser -S -G app app
 USER app
 WORKDIR /app
 # making changes here..
-RUN mkdir data
 COPY package*.json .
 RUN npm install
 COPY . .

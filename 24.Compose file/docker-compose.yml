@@ -19,8 +19,8 @@ services:
     volumes:
       - vidly:/data/db 
       
-  volumes:
-    vidly:
+volumes:
+  vidly:
   
 
 

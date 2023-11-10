@@ -1,0 +1,5 @@
+$ docker build -t <tag_name> .
+
+$ docker build -t react-app .
+
+$ docker run <img_id/name>
